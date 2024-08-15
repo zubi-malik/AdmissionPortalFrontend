@@ -12,7 +12,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/all-users")
+      .get("https://smit-backend.onrender.com/api/all-users")
       .then((res) => {
         setUsers(res.data.users);
       })

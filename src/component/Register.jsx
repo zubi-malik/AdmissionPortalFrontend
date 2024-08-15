@@ -24,7 +24,7 @@ export default function Register() {
 
   const onSubmit = (values) => {
     axios
-      .post("http://localhost:5000/api/register", values)
+      .post("https://smit-backend.onrender.com/api/register", values)
       .then((res) => {
         alert(res.data.message);
         navigate("/home");

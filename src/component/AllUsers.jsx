@@ -7,7 +7,7 @@ export default function AllUsers() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/all-users-length")
+      .get("https://smit-backend.onrender.com/api/all-users-length")
       .then((res) => {
         console.log(res.data.allUsers);
         setAllUsersLength(res.data.allUsers);
